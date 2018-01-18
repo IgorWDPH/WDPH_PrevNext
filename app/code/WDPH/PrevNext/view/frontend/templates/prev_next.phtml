@@ -1,0 +1,32 @@
+<?php if($this->isPrevNextEnabled()): ?>
+	<?php
+	$prevProduct = $this->getPreviousProduct();
+	$nextProduct = $this->getNextProduct();
+	?>
+	<?php if($prevProduct || $nextProduct): ?>
+		<div class="wdph-prev-next">			
+			<?php if($prevProduct): ?>
+				<div class="wdph-prev">
+					<a class="wdph-prev-product-link" href="<?php echo $prevProduct->getProductUrl(); ?>" title="<?php echo $prevProduct->getName(); ?>"><?php echo __('Prev'); ?></a>
+					<?php if($this->isShowPreview()): ?>
+						<div class="wdph-prev-preview">
+							<img class="wdph-prev-preview-img" src="<?php echo $this->getPreviewProductImage($prevProduct); ?>" alt="<?php echo $prevProduct->getName(); ?>">
+							<h3 class="wdph-prev-preview-title"><?php echo $prevProduct->getName(); ?></h3>
+						</div>
+					<?php endif; ?>
+				</div>
+			<?php endif;?>
+			<?php if($nextProduct): ?>
+				<div class="wdph-next">
+					<a class="wdph-next-product-link" href="<?php echo $nextProduct->getProductUrl(); ?>" title="<?php echo $nextProduct->getName(); ?>"><?php echo __('Next'); ?></a>
+					<?php if($this->isShowPreview()): ?>
+						<div class="wdph-next-preview">
+							<img class="wdph-next-preview-img" src="<?php echo $this->getPreviewProductImage($nextProduct); ?>" alt="<?php echo $nextProduct->getName(); ?>">
+							<h3 class="wdph-next-preview-title"><?php echo $nextProduct->getName(); ?></h3>
+						</div>
+					<?php endif; ?>
+				</div>
+			<?php endif;?>
+		</div>
+	<?php endif;?>
+<?php endif; ?>

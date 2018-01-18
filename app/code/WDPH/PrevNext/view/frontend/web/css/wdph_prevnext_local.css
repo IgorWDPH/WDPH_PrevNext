@@ -1,0 +1,6 @@
+.wdph-prev-next { width: 100%; clear: both; display: block; float: left; }
+.wdph-prev-next h3 { font-size: 12px; }
+.wdph-prev-next .wdph-prev, .wdph-prev-next .wdph-next { float: left; }
+.wdph-prev-next .wdph-prev-preview, .wdph-prev-next .wdph-next-preview { display: none; padding: 3px; text-align: center; max-width: 106px; border: 1px solid #ccc; background-color: #fff; position: absolute; z-index: 99999; }
+.wdph-prev-next .wdph-prev.visible .wdph-prev-preview, .wdph-prev-next .wdph-next.visible .wdph-next-preview { display: block; }
+.wdph-prev-next a { margin: 5px; }

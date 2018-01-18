@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">    
+    <head>
+        <css src="WDPH_PrevNext::css/wdph_prevnext_local.css"/>
+		<link src="WDPH_PrevNext::js/wdph_prevnext_main.js"/>
+    </head>
+	<body>
+        <referenceContainer name="product.info.main">
+            <block class="WDPH\PrevNext\Block\Prevnext" name="wdph.prevnext" template="WDPH_PrevNext::prev_next.phtml" before="-"/>
+        </referenceContainer>
+    </body>
+</page>

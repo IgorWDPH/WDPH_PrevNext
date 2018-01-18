@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+	<default>
+		<wdph_prevnext>
+			<general>
+				<enabled>1</enabled>
+				<show_preview>1</show_preview>
+			</general>			
+		</wdph_prevnext>
+	</default>
+</config>
